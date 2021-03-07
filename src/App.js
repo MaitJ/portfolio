@@ -1,8 +1,12 @@
 import { render } from '@testing-library/react';
 import React from 'react';
+import Main from './Main';
+
 
 const App = () => {
-    return(<h1>Hello world!</h1>);
+    return(
+        <Main />
+    );
 };
 
 export default App;

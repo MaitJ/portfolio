@@ -1,0 +1,41 @@
+.main {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    align-items: center;
+  }
+}
+
+.introduction {
+  padding: 250px;
+  font-size: 60px;
+}
+
+.introduction h1 {
+  margin: 0px 0px;
+  padding: auto 5px;
+  text-align: center;
+}
+
+.about {
+  font-size: 3rem;
+}
+
+body {
+  font-family: "Simplifica";
+  background: url("../pics/töödeldud3.jpg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0px 0px;
+}
+
+@font-face {
+  font-family: "Simplifica";
+  src: url("../fonts/SIMPLIFICA\ Typeface.ttf");
+}
