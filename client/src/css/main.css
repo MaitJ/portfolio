@@ -1,0 +1,94 @@
+.main {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    align-items: center;
+  }
+}
+
+.introduction {
+  padding: 250px;
+  font-size: 60px;
+}
+
+.introduction h1 {
+  margin: 0px 0px;
+  padding: auto 5px;
+  text-align: center;
+}
+
+.about {
+  display: grid;
+  grid-template-rows: 20% 60% 30%;
+  font-size: 3rem;
+}
+
+.about h6 {
+  margin: 0px 3px;
+  justify-self: center;
+}
+
+.about button {
+  grid-row: 3;
+  font-family: Simplifica;
+  font-size: 2.2rem;
+  border: 0px;
+  color: white;
+  background-color: transparent;
+  justify-self: center;
+  padding: 5px 12px;
+  border: 1px white solid;
+  margin: auto;
+}
+
+.about img {
+  width: 15%;
+  height: auto;
+  justify-self: center;
+  margin-bottom: 5px;
+}
+
+.about button:hover {
+  cursor: pointer;
+  animation: fadeToWhite 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeToWhite {
+  0% {
+    color: white;
+    background-color: transparent;
+  }
+  100% {
+    color: black;
+    background-color: white;
+  }
+}
+
+.TestContainer {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  gap: 5px;
+  background-color: black;
+  padding: 5px 0px;
+  margin-bottom: 10px;
+}
+
+.TestContainer img {
+  width: 100%;
+  height: auto;
+  justify-self: center;
+  object-fit: cover;
+}
+
+.TestContainer-item {
+  justify-self: center;
+}
