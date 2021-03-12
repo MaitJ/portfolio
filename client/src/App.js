@@ -1,11 +1,14 @@
 import React from 'react';
 import Main from './Main';
-import Contact from './Contact';
+import Navbar from './Navbar';
 
 
 const App = () => {
     return(
-        <Main />
+        <React.Fragment>
+            <Navbar />
+            <Main />
+        </React.Fragment>
     );
 };
 
