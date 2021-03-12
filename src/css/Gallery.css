@@ -1,0 +1,50 @@
+.main-content {
+  padding: 10%;
+  flex: 1 1 80%;
+  min-height: 100vh;
+}
+
+.portfolio {
+  display: grid;
+  height: 100%;
+  padding: 50px;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  color: white;
+}
+
+.portfolio-item {
+  background: gray;
+  color: lightskyblue;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  background-size: cover;
+  background-position: top left;
+  transition: all ease-in-out 300ms;
+  position: relative;
+  z-index: 10;
+}
+.portfolio-item.small {
+  grid-row: 1 span;
+  grid-column: 1 span;
+}
+.portfolio-item.medium {
+  grid-row: 40px;
+  grid-column: 40px;
+}
+.portfolio-item.large {
+  grid-row: 60px;
+  grid-column: 60px;
+}
+.portfolio-item.tall {
+  grid-row: 60px;
+  grid-column: 20px;
+}
+.portfolio-item.wide {
+  grid-row: 20px;
+  grid-column: 60px;
+}
