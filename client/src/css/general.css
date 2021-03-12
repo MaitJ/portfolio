@@ -1,0 +1,11 @@
+body {
+  font-family: "Simplifica";
+  background: url("../pics/töödeldud3.jpg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0px 0px;
+}
+
+@font-face {
+  font-family: "Simplifica";
+  src: url("../fonts/SIMPLIFICA\ Typeface.ttf");
+}
