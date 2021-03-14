@@ -1,4 +1,8 @@
 import React from 'react';
+import {useState} from 'react';
+import {useEffect} from 'react';
+
+import {getImages} from './helpFunctions/getImages';
 
 import './css/style.css';
 
@@ -19,7 +23,6 @@ const Gallery = () => {
         <section className='main-content'>
             <section className='portfolio'>
                 <section className = 'portfolio-item small'>
-                    <img src="../pictures/toodeldud3.jpg" alt=""/>
                 </section>
                 <section className = 'portfolio-item large'> kaks
                     <img src="../pictures/toodeldud3.jpg" alt=""/>

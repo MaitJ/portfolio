@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Redirect, Route } from 'react-router-dom';
 import Gallery from "./Gallery.js";
+import Main from './Main';
 
-import './css/style.css';
 
 
 function Navbar() {
@@ -16,6 +16,8 @@ function Navbar() {
                 </section>
                 <section className='content'>
                     <Route path="/gallery" component={Gallery}/>
+                    <Route path="/home" component={Main} />
+                    <Route path="/"><Redirect to="/home"></Redirect></Route>
                 </section>
             </div>
         </Router>

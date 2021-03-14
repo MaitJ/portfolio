@@ -1,5 +1,10 @@
+import axios from 'axios';
 export const getImages = (setImageList) => {
-    fetch('http://localhost:3001/getimages')
-    .then(res => res.json())
-    .then(json => setImageList(json));
+   axios.get("http://localhost:3001/getimages").then((response) =>{
+       setImageList(response.data);
+   }).catch((error) =>{
+       if (error) {
+           console.log(error);
+       }
+   });
 };
