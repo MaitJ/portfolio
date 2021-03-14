@@ -19,7 +19,7 @@ const Main = () => {
     const [imageList, setImageList] = useState([]);
 
 
-    useEffect(() => {
+    useEffect(() =>{
         getImages(setImageList);
     }, []);
 

@@ -8,9 +8,15 @@ app.use(express.json());
 
 
 
-app.get('/getimages', (req, res) =>{
-    const fileDir = imageHandler.getImageArray();
-    res.send(fileDir);
+app.get('/getimages', (req, res, next) =>{
+    req.pics = imageHandler.getImageArray();
+    next();
+}, (req, res) =>{
+    res.send(req.pics);
+});
+
+app.get("/", (req, res) => {
+    res.send("Hello world!");
 });
 
 app.listen(3001, () => {
