@@ -12,7 +12,7 @@ app.get('/getimages', (req, res, next) =>{
     req.pics = imageHandler.getImageArray();
     next();
 }, (req, res) =>{
-    res.send(req.pics);
+    res.json(req.pics);
 });
 
 app.get("/", (req, res) => {

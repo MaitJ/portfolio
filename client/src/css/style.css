@@ -3,21 +3,6 @@
   src: url("../fonts/SIMPLIFICA Typeface.ttf");
 }
 
-html {
-  background-image: url("../pics/töödeldud3.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-body {
-  color: white;
-  font-family: "Simplifica";
-  font-size: 1.2rem;
-  line-height: 1.45;
-}
-
 .navbar {
   overflow: hidden;
   /* width: 100%; */

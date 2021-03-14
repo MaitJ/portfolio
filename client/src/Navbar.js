@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Link, Redirect, Route } from 'react-router-dom';
-import Gallery from "./Gallery.js";
+import RowGallery from "./RowGallery.js";
 import Main from './Main';
 
 
@@ -15,7 +15,7 @@ function Navbar() {
                         <Link to="/contact">Contact </Link>
                 </section>
                 <section className='content'>
-                    <Route path="/gallery" component={Gallery}/>
+                    <Route path="/gallery" component={RowGallery}/>
                     <Route path="/home" component={Main} />
                     <Route path="/"><Redirect to="/home"></Redirect></Route>
                 </section>
