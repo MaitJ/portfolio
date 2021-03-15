@@ -92,3 +92,28 @@
 .TestContainer-item {
   justify-self: center;
 }
+
+.icons {
+  display: block;
+  font-size: 35px;
+  background-color: none;
+  padding: 10px;
+}
+
+.fa {
+  padding: 35px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+}
+
+.fa:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.fa-instagram {
+  background-color: transparent;
+}

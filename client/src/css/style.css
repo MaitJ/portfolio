@@ -5,7 +5,7 @@
 
 .navbar {
   overflow: hidden;
-  /* width: 100%; */
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,9 +50,9 @@ a.active {
 
 /* GALLERY PAGE */
 
-.main-content {
-  width: 100%;
-}
+/* .main-content {
+  /* width: 100%; */
+
 
 .portfolio {
   display: grid;
