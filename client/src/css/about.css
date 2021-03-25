@@ -1,0 +1,25 @@
+.aboutpage {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+.about-text {
+  display: inline-block;
+  width: 30%;
+  margin-left: 8%;
+  margin-top: 5%;
+  color: white;
+  font-size: 35px;
+  border-bottom: 1px solid white;
+}
+
+.about-image img {
+  width: 20%;
+  height: auto;
+  margin-left: 12%;
+  margin-top: 10%;
+  justify-self: center;
+  margin-bottom: 5px;
+}

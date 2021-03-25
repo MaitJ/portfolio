@@ -1,18 +1,102 @@
-#root {
+/* #root {
   display: grid;
   justify-items: center;
-}
+} */
+
 .contactForm {
-  display: grid;
-  grid-template-rows: 25% 25% 50%;
-  width: 50%;
-  height: auto;
+  display: block;
+  justify-content: center;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-items: center;
   justify-items: center;
   color: white;
   font-size: 1.5rem;
+  background-color: rgba(129, 129, 129, 0.8);
+  padding: 80px;
+  border-radius: 14px;
+}
+
+.heading {
+  text-align: center;
+  color: white;
+  font-size: 90px;
 }
 
 .contactForm label {
   height: auto;
   width: auto;
+  font-size: 35px;
+}
+
+.contactForm input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.contactForm button {
+  background-color: black;
+  color: white;
+  margin-top: 25px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: 0.5s ease-in-out;
+}
+
+#message {
+  padding: 60px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+#button:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+@keyframes myAnimation {
+  0% {
+    opacity: 1;
+    /* transform: rotateX(90deg); */
+  }
+  50% {
+    opacity: 0.5;
+    /* transform: rotateX(0deg); */
+  }
+  100% {
+    display: none;
+    opacity: 0;
+    /* transform: rotateX(90deg); */
+  }
+}
+.contact-message {
+  /* display: flex; */
+  width: 200px;
+  height: 100px;
+  background-color: gray;
+  left: 80%;
+  padding: 20px;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 40px;
+  /* margin-right: 150px; */
+  color: white;
+  font-size: 20px;
+  animation-name: myAnimation;
+  animation-duration: 5000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
 }
