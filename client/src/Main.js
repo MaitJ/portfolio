@@ -14,8 +14,6 @@ const Main = () => {
                 <h1>Mait Jurask</h1>
                 <h1>PORTFOLIO</h1>
             </section>
-            <section className="TestContainer">
-            </section>
             <section className="about">
                 <img src={"./logo_white.png"} alt="Signature placeholder"/>
                 <button type="button">Contact Me</button>

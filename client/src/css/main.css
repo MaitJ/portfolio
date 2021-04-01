@@ -14,8 +14,10 @@
 }
 
 .introduction {
-  padding: 250px;
+  margin: 15% 0px;
   font-size: 60px;
+  text-align: center;
+  padding: 5px;
 }
 
 .introduction h1 {
@@ -28,6 +30,7 @@
   display: grid;
   grid-template-rows: 20% 60% 30%;
   font-size: 3rem;
+  margin-bottom: 50px;
 }
 
 .about h6 {
@@ -53,6 +56,16 @@
   height: auto;
   justify-self: center;
   margin-bottom: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .about img {
+    width: 40%;
+  }
+  .about button {
+    font-size: 2rem;
+    padding: 0.2rem 0.5rem;
+  }
 }
 
 .about button:hover {
