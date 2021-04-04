@@ -41,7 +41,7 @@ const RowGallery = () => {
     //
 
     const galleryPhotos = imageList.map((value) => {
-        return {src: value.img, width: Math.round((value.width / 1000)), height: Math.round((value.height / 1000))};
+        return {src: value.img, width: Math.round((value.width / 1000)), height: Math.round((value.height / 1000)), alt: value.alt};
     });
 
     return (
