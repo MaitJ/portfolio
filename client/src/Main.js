@@ -14,8 +14,7 @@ const Main = () => {
         <section className="main">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
             <section className="introduction">
-                <h1>Mait Jurask</h1>
-                <h1>PORTFOLIO</h1>
+                <h1>Mait Jurask PORTFOLIO</h1>
             </section>
             <section className="about">
                 <img src={"./logo_white.png"} alt="Signature placeholder"/>

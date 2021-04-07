@@ -93,7 +93,7 @@ a.active {
 
 .picture-modal-container {
   z-index: 2;
-  position: absolute;
+  position: fixed;
   display: none;
   justify-content: center;
   align-items: center;
@@ -118,7 +118,6 @@ a.active {
   background-color: transparent;
   color: white;
   padding: 0px;
-  transition: all 0.3s ease;
   border: 0;
 }
 
@@ -178,6 +177,18 @@ a.active {
 .modal-picture {
   width: auto;
   height: 60%;
+}
+
+@media screen and (max-width: 600px) {
+  .modal-picture {
+    width: 100%;
+    height: auto;
+  }
+
+  .prev-button,
+  .next-button {
+    display: none;
+  }
 }
 
 .content {
