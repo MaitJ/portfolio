@@ -41,6 +41,15 @@
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
 .contactForm button {
@@ -55,7 +64,7 @@
   transition: 0.5s ease-in-out;
 }
 
-#message {
+#subject {
   padding: 60px;
   padding-left: 10px;
   padding-top: 10px;
@@ -64,39 +73,4 @@
 #button:hover {
   background-color: whitesmoke;
   color: black;
-}
-
-@keyframes myAnimation {
-  0% {
-    opacity: 1;
-    /* transform: rotateX(90deg); */
-  }
-  50% {
-    opacity: 0.5;
-    /* transform: rotateX(0deg); */
-  }
-  100% {
-    display: none;
-    opacity: 0;
-    /* transform: rotateX(90deg); */
-  }
-}
-.contact-message {
-  /* display: flex; */
-  width: 200px;
-  height: 100px;
-  background-color: gray;
-  left: 80%;
-  padding: 20px;
-  position: absolute;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 40px;
-  /* margin-right: 150px; */
-  color: white;
-  font-size: 20px;
-  animation-name: myAnimation;
-  animation-duration: 5000ms;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
 }

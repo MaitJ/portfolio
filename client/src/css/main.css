@@ -1,9 +1,9 @@
 .main {
   width: 100%;
   height: auto;
-  display: grid;
-  grid-template-rows: auto auto;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: white;
 }
 
@@ -14,20 +14,27 @@
 }
 
 .introduction {
-  padding: 250px;
+  margin: 15% auto;
   font-size: 60px;
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+  border-radius: 15px;
 }
 
 .introduction h1 {
   margin: 0px 0px;
   padding: auto 5px;
   text-align: center;
+  font-size: 5rem;
 }
 
 .about {
-  display: grid;
-  grid-template-rows: 20% 60% 30%;
   font-size: 3rem;
+  margin-bottom: 50px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .about h6 {
@@ -42,7 +49,6 @@
   border: 0px;
   color: white;
   background-color: transparent;
-  justify-self: center;
   padding: 5px 12px;
   border: 1px white solid;
   margin: auto;
@@ -52,7 +58,18 @@
   width: 15%;
   height: auto;
   justify-self: center;
-  margin-bottom: 5px;
+  margin: auto;
+  margin-bottom: 1.2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .about img {
+    width: 40%;
+  }
+  .about button {
+    font-size: 2rem;
+    padding: 0.2rem 0.5rem;
+  }
 }
 
 .about button:hover {
@@ -91,4 +108,29 @@
 
 .TestContainer-item {
   justify-self: center;
+}
+
+.icons {
+  display: block;
+  font-size: 35px;
+  background-color: none;
+  padding: 10px;
+  margin: auto;
+}
+
+.fa {
+  padding: 35px;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+}
+
+.fa:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.fa-instagram {
+  background-color: transparent;
 }

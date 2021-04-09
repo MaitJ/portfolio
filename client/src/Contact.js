@@ -32,24 +32,20 @@ const Contact = () => {
     };
 
     return(
-        <form onSubmit={handleSubmit}>
-            <section className='contact'>
-                { msgStatus ? <div className='contact-message'><h2>{contactMessage}</h2></div> : null}
-                <section className='heading'>
-                    <h1>Contact Me</h1>
-                </section>
-                <section className="contactForm">
-                    <label>Name</label>
-                    <input type="text" id='name' name='name' placeholder='Name...' required/>
-                    <label>Email</label>
-                    <input type="email" id='email' name='email' placeholder='E-mail...' required/>
-                    <label>Message</label>
-                    <input type="text" id='message' name='message' placeholder='Some text...' required/>
-                    <button type='submit' id='button' value='Submit'>{status}</button>
-                </section>
-                
+        <section className='contact'>
+            <section className='heading'>
+                <h1>Contact Me</h1>
             </section>
-        </form>
+            <section className="contactForm">
+                <label>Name</label>
+                <input type="text" id='firstname' name='firstname' placeholder='Name...' required/>
+                <label>Email</label>
+                <input type="email" id='email' name='email' placeholder='E-mail...'/>
+                <label>Subject</label>
+                <input type="text" id='subject' name='subject' placeholder='Some text...'/>
+                <button type='button' id='button' value='Submit'>Send</button>
+            </section>
+        </section>
     );
 }
 

@@ -6,7 +6,7 @@ const getImageArray = () => {
     const files = fs.readdirSync(dir);
     const returnArray = files.map((value, index) => {
         const {width, height} = sizeOf(dir + "/" + value);
-        return { "key" : index, "img" : value, "width": width, "height": height};
+        return { "key" : index, "img" : `galeriipildid/${value}`, "width": width, "height": height, "alt": value};
 
     });
 

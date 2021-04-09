@@ -1,18 +1,12 @@
-import React, {useState} from 'react';
-import './css/general.css';
-import './css/about.css';
+import React from 'react';
+
 const About = () => {
 
     return(
-        <section className='aboutpage'>
-            <div className='about-text'>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, amet suscipit tenetur quo quos esse illo aspernatur iure vel, et eaque qui nisi placeat alias voluptatibus unde dolore illum ipsa impedit rerum! Velit nulla inventore non illo qui quae vero magnam modi quam, sunt ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo reiciendis impedit assumenda recusandae aliquam enim tempora explicabo aperiam est pariatur.</p>
-            </div>
-            <div className='about-image'>
-                <img src={"./logo_white.png"} alt="Signature placeholder"/>
-            </div>
+        <section className="about-container">
+            <h1>About me</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, nostrum totam. Ex, quasi, recusandae rem debitis dolorum quia praesentium quas maxime deserunt fugiat dolor. Reprehenderit atque voluptate repellat animi fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus odit explicabo illo eius nam corrupti sunt ad distinctio consectetur rem magnam vero modi consequatur a architecto facere saepe, harum vel. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae amet dolorum earum natus? Culpa, eveniet dolorem distinctio rem ut dolore mollitia repellat molestias provident, optio ea voluptatum, eligendi quaerat nemo!</p>
         </section>
-        
     );
 }
 

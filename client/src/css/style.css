@@ -5,7 +5,7 @@
 
 .navbar {
   overflow: hidden;
-  /* width: 100%; */
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,9 +16,12 @@
 @media screen and (max-width: 600px) {
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     font-size: 2em;
+  }
+  .navbar a {
+    width: 100%;
   }
 }
 
@@ -50,9 +53,8 @@ a.active {
 
 /* GALLERY PAGE */
 
-.main-content {
-  width: 100%;
-}
+/* .main-content {
+  /* width: 100%; */
 
 .portfolio {
   display: grid;
@@ -87,4 +89,131 @@ a.active {
 .portfolio-item.wide {
   grid-row: 5 / 7;
   grid-column: 1 / 5;
+}
+
+.picture-modal-container {
+  z-index: 2;
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.show-modal {
+  display: flex;
+}
+
+.prev-button,
+.next-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  background-color: transparent;
+  color: white;
+  padding: 0px;
+  border: 0;
+}
+
+.exit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  background-color: transparent;
+  color: white;
+  padding: 0px;
+  border: 0;
+}
+
+.exit-button :hover {
+  color: black;
+  background-color: white;
+}
+
+.exit-button svg {
+  padding: 0.3em 0.3em;
+}
+
+.next-button svg {
+  padding: 0.3em 0.3em;
+}
+
+.prev-button svg {
+  padding: 0.3em 0.3em;
+}
+
+.prev-button :hover {
+  background-color: white;
+  color: black;
+}
+
+.next-button :hover {
+  background-color: white;
+  color: black;
+}
+
+.exit-button {
+  position: absolute;
+  right: 2%;
+  top: 1%;
+}
+
+.prev-button {
+  position: absolute;
+  left: 5%;
+}
+.next-button {
+  position: absolute;
+  right: 5%;
+}
+
+.modal-picture {
+  width: auto;
+  height: 60%;
+}
+
+@media screen and (max-width: 600px) {
+  .modal-picture {
+    width: 100%;
+    height: auto;
+  }
+
+  .prev-button,
+  .next-button {
+    display: none;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  display: flex;
+  color: white;
+  justify-content: center;
+  width: 50%;
+  height: auto;
+  position: absolute;
+  top: 10%;
+  flex-direction: column;
+}
+
+.about-container h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.about-container p {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-align: left;
 }
