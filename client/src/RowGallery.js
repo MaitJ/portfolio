@@ -27,6 +27,8 @@ const RowGallery = () => {
         toggleModal(true);
     }
 
+    
+
     const checkNumbers = (number) => {
         if (number > (imageList.length - 1)) {
             return 0;

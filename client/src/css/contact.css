@@ -32,15 +32,24 @@
 }
 
 .contactForm input {
-  width: 100%; 
-  padding: 15px; 
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-  box-sizing: border-box; 
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
   margin: auto;
-  margin-top: 6px; 
+  margin-top: 6px;
   margin-bottom: 16px;
-  resize: vertical
+  resize: vertical;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
 .contactForm button {
@@ -55,7 +64,7 @@
   transition: 0.5s ease-in-out;
 }
 
-#subject {
+#message {
   padding: 60px;
   padding-left: 10px;
   padding-top: 10px;

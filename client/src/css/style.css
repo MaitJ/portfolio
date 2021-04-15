@@ -216,4 +216,7 @@ a.active {
   font-size: 2rem;
   letter-spacing: 1px;
   text-align: left;
+  background-color: rgba(129, 129, 129, 0.8);
+  padding: 35px;
+  border-radius: 8px;
 }
