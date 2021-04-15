@@ -1,12 +1,20 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Link, Redirect, Route } from 'react-router-dom';
+import Contact from './Contact';
 
 import './css/main.css';
 import './css/general.css';
+import { BiWindows } from 'react-icons/bi';
 
 
 const Main = () => {
 
+
+    const handleContactClick = () => {
+        <Router>
+            <Route path="/contact" component={Contact} />
+        </Router>
+    }
 
 
     return(
@@ -18,14 +26,12 @@ const Main = () => {
             </section>
             <section className="about">
                 <img src={"./logo_white.png"} alt="Signature placeholder"/>
-                <button type="button">Contact Me</button>
+                <Link to='/contact' type='button' className="button">Contact Me</Link>
             </section>
-            <Router>
                 <section className='icons'>
-                    <Link to='instagram.com' className='fa fa-instagram'></Link>
-                    <Link to='flickr.com' className='fa fa-flickr'></Link>
+                    <a target="_blank" href="https://instagram.com/maitjurask" className='fa fa-instagram'></a>
+                    <a target="_blank" href="https://www.flickr.com/photos/164370955@N05/" className='fa fa-flickr'></a>
                 </section>
-            </Router>
         </section>
     );
 };
