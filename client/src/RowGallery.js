@@ -25,7 +25,6 @@ const RowGallery = () => {
         const selectedImg = imageList.find((image) => image.img === picName);
         setActivePicIndex(selectedImg.key);
         toggleModal(true);
-        console.log(imageList);
     }
 
     
