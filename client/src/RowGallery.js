@@ -21,12 +21,14 @@ const RowGallery = () => {
 
 
     const handlePicClick = (target) => {
-        const picName = target.attributes[1].nodeValue;
+        const picName = target.attributes.src.nodeValue;
         const selectedImg = imageList.find((image) => image.img === picName);
         setActivePicIndex(selectedImg.key);
         toggleModal(true);
         console.log(imageList);
     }
+
+    
 
     const checkNumbers = (number) => {
         if (number > (imageList.length - 1)) {
