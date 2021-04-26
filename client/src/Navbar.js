@@ -3,11 +3,11 @@ import RowGallery from "./RowGallery.js";
 import Main from './Main';
 import Contact from './Contact';
 import About from './About';
+import ReactGA from 'react-ga';
 
 
 
 function Navbar() {
-
     
     return (
         <Router>
