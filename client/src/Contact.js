@@ -1,7 +1,9 @@
 import React, {useState, useRef} from 'react';
 import  ReCAPTCHA  from 'react-google-recaptcha';
+import env from 'react-dotenv';
 import './css/general.css';
 import './css/contact.css';
+require('dotenv').config();
 const Contact = () => {
     const [status, setStatus] = useState("Submit");
     const [msgStatus, setMsgStatus] = useState(false);
@@ -54,7 +56,7 @@ const Contact = () => {
                     <input type="email" id='email' name='email' placeholder='E-mail...'/>
                     <label>Subject</label>
                     <input type="text" id='message' name='message' placeholder='Some text...'/>
-                    <ReCAPTCHA sitekey='6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
+                    <ReCAPTCHA sitekey={process.env.REACT_APP_RECAPTCHA_SITEKEY}
                         ref={recaptchaRef}
                         onChange={onChange} 
                     />

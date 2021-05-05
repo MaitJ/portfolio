@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Link, Redirect, Route } from 'react-router-dom';
 import Contact from './Contact';
+import ReactGA from 'react-ga';
 
 import './css/main.css';
 import './css/general.css';
@@ -8,7 +9,6 @@ import { BiWindows } from 'react-icons/bi';
 
 
 const Main = () => {
-
 
     const handleContactClick = () => {
         <Router>
