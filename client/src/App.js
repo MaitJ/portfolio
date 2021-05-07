@@ -7,11 +7,12 @@ const App = () => {
 
 
     ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_CODE);
-    console.log(process.env.REACT_APP_GA_TRACKING_CODE);
+    console.log("See on GA kood" + process.env.REACT_APP_GA_TRACKING_CODE);
 
     useEffect(() => {
         ReactGA.pageview(window.location.pathname + window.location.search);
     })
+
     return(
         <React.Fragment>
             <Navbar />
