@@ -4,10 +4,17 @@ import Main from './Main';
 import Contact from './Contact';
 import About from './About';
 import ReactGA from 'react-ga';
-
+import createHistory from 'history/createBrowserHistory';
 
 
 function Navbar() {
+
+    // const history = createHistory()
+    // ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_CODE);
+    // history.listen((location, action) => {
+    //     ReactGA.pageview(location.pathname + location.search);
+    //     console.log(location.pathname)
+    // });
     
     return (
         <Router>
