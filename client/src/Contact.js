@@ -1,5 +1,5 @@
 import React, {useState, useRef} from 'react';
-import  ReCAPTCHA  from 'react-google-recaptcha';
+import ReCAPTCHA from 'react-google-recaptcha';
 import env from 'react-dotenv';
 import './css/general.css';
 import './css/contact.css';
@@ -8,15 +8,32 @@ const Contact = () => {
     const [status, setStatus] = useState("Submit");
     const [msgStatus, setMsgStatus] = useState(false);
     const [contactMessage, setContactMessage] = useState('Something went wrong');
+    const [token, setToken] = useState("");
     const recaptchaRef = React.createRef();
 
 
     function onChange(value) {
+        setToken(value);
         console.log("Captcha value:", value);
     }
 
+    // const handleToken = (token) => {
+    //     setForm((currentForm) => {
+    //         return {...currentForm, token }
+    //     })
+    // }
+
+    // const handleExpire = () => {
+    //     setForm((currentForm) => {
+    //         return {...currentForm, token: null }
+    //     })
+    // }
+
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        const recaptchaValue = recaptchaRef.current.getValue();
+
         setStatus("Sending...");
         const {name, email, message} = e.target.elements;
         let details = {
@@ -56,10 +73,13 @@ const Contact = () => {
                     <input type="email" id='email' name='email' placeholder='E-mail...'/>
                     <label>Subject</label>
                     <input type="text" id='message' name='message' placeholder='Some text...'/>
-                    <ReCAPTCHA sitekey={process.env.REACT_APP_RECAPTCHA_SITEKEY}
+                    <div className='recaptcha'>
+                        <ReCAPTCHA sitekey={process.env.REACT_APP_RECAPTCHA_SITEKEY}
                         ref={recaptchaRef}
-                        onChange={onChange} 
-                    />
+                        onChange={value => onChange(value)}
+                        onExpired={e => setToken("")}
+                        />
+                    </div>
                     <button type='submit' id='button' value='Submit'>Send</button>
                 </section>
             </section>
