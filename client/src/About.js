@@ -5,7 +5,10 @@ const About = () => {
     return(
         <section className="about-container">
             <h1>About me</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, nostrum totam. Ex, quasi, recusandae rem debitis dolorum quia praesentium quas maxime deserunt fugiat dolor. Reprehenderit atque voluptate repellat animi fugiat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus odit explicabo illo eius nam corrupti sunt ad distinctio consectetur rem magnam vero modi consequatur a architecto facere saepe, harum vel. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae amet dolorum earum natus? Culpa, eveniet dolorem distinctio rem ut dolore mollitia repellat molestias provident, optio ea voluptatum, eligendi quaerat nemo!</p>
+            <p>Hi I'm Mait Jurask, a hobbyist photographer, my main work lies in car photography. I started out photographing everything and anything but quickly took an interest in cars. Since then I've been strictly photographing cars. I've done photography for over 3 years but it's always been on and off.
+            <br/>
+            <span class="made-by">This website was made as a school project by me and my friend Martin Kilgi</span>
+            </p>
         </section>
     );
 }
